@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://remon:godislove@myportfolio-cg55b.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "remonfawzi.comSecret"
+}
