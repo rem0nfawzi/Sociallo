@@ -3,7 +3,6 @@ import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { createProfile } from '../../store/actions/profile';
-import Alert from '../layout/alert';
 
 function CreateProfile({ auth, createProfile, history }) {
   const [formData, setFormData] = useState({
@@ -51,7 +50,6 @@ function CreateProfile({ auth, createProfile, history }) {
   };
   return (
     <Fragment>
-      <Alert />
       <h1 className='large text-primary'>Create Your Profile</h1>
       <p className='lead'>
         <i className='fas fa-user' /> Let's get some information to make your

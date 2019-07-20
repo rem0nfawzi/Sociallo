@@ -3,7 +3,6 @@ import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setAlert } from '../../store/actions/alert';
 import { register } from '../../store/actions/auth';
-import Alert from '../layout/alert';
 
 const Register = props => {
   const [formData, setFormData] = useState({
@@ -35,7 +34,6 @@ const Register = props => {
   }
   return (
     <Fragment>
-      <Alert />
       <h1 className='large text-primary'>Sign Up</h1>
       <p className='lead'>
         <i className='fas fa-user' /> Create Your Account

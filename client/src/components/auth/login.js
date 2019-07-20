@@ -2,7 +2,6 @@ import React, { Fragment, useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { login } from '../../store/actions/auth';
-import Alert from '../layout/alert';
 
 const Login = ({ login, isAuthenticated }) => {
   const [formData, setFormData] = useState({
@@ -27,7 +26,6 @@ const Login = ({ login, isAuthenticated }) => {
   }
   return (
     <Fragment>
-      <Alert />
       <h1 className='large text-primary'>Sing In</h1>
       <p className='lead'>
         <i className='fas fa-user' /> Sing In to Your Account
